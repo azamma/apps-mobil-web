@@ -28,7 +28,7 @@ function validarFormulario () {
 	if (!nombre.match(/^[a-zA-Z\s]+$/)) 
     {
         alert('Nombre solo letras');
-        return false;
+        validado= false;
     }
 
 	if (apellido===""){
@@ -40,7 +40,7 @@ function validarFormulario () {
 		if (!apellido.match(/^[a-zA-Z\s]+$/)) 
     {
         alert('nombre solo texto');
-        return false;
+        validado= false;
     }
 
 if (fecha===0 || fecha===""){
@@ -49,8 +49,14 @@ if (fecha===0 || fecha===""){
 	}
 
 	if (validado===true) {
+		validado=false;
+		document.getElementById("exito").style.display ="block";		
+		//En 5 segundos lo hace desaparecer
+		$("#exito").delay(5000).hide(1);
 		alert("Nombre: " + nombre + "\nApellido: " + apellido +"\nFecha de Nacimiento: "+ fecha);
 	}
+	
+	return validado;
 }
 
 function cancelar() {

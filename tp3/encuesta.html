@@ -5,6 +5,7 @@
 	<title>Trabajo practico número 1</title>
 	<link rel="stylesheet" type="text/css" href="css/encuesta.css">
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
 	   <header>
@@ -25,6 +26,8 @@
 
 
 	       <div id="formulario">
+		   
+			 <div id="exito">Gracias por completar la encuesta</div>
 
 	       	 <form id="form">
    			   
@@ -58,7 +61,7 @@
 					</br> </br>
 				<div id="botones">
 				<center>
-				<input  type="submit" value="Enviar" onclick="validarFormulario()"> 
+				<input  type="submit" value="Enviar" onclick="return validarFormulario()"> 
 				<input  type="button" value="Cancelar" onclick="cancelar()"/>
 				<input type="reset" value="Reestablecer"/>
 				</center>

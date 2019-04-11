@@ -148,3 +148,15 @@ footer {
 h3 {	
 padding: 1%;
 color: white;}
+
+#exito {
+	display: none;
+	background: #757584;
+	font-family: Arial;
+	font-weight: bold;
+	height: 5%;
+	text-align: center;
+	margin: 0px;
+	padding-top: 2%;
+	color: #26ff26;
+}
