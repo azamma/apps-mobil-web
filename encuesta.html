@@ -4,8 +4,6 @@
 	<title>Trabajo practico número 1</title>
 	<link rel="stylesheet" type="text/css" href="css/encuesta.css">
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/caracteres.js"></script>
   </head>
   <body>
 	   <header>
@@ -30,20 +28,20 @@
 	       	 <form id="form">
    			   
    			   <label id=princ> NOMBRE:</label>
-					<label><input id="nom" type="text" name="nombre" maxlength="25" required>				
+					<input id="nom" type="text" name="nombre" maxlength="25" />				
 					</br>
 					
 				<label id=princ> APELLIDO:</label>
-					<input id="ape" type="text" name="apellido" maxlength="25" required>
+					<input id="ape" type="text" name="apellido" maxlength="25" />
 					</br>
 				
 				<label id=princ>NACIMIENTO:</label>
-					<input id="check" type="date" name="fecha" required/>
+					<input id="check" type="date" name="fecha" />
 					</br> </br>
 					
 				<label id=princ>SEXO:</label>
-					<label><input type="radio" name="sexo" value="Masculino">Masculino</label>
-					<input type="radio" name="sexo" value="Femenino" />Femenino
+					<label><input type="radio" id="sexo" value="Masculino">Masculino</label>
+					<input type="radio" id="sexo" value="Femenino" />Femenino
 					</br> </br>
 
 				<label id="cal">¿Cómo calificarias a esta página?</label>
@@ -59,9 +57,9 @@
 					</br> </br>
 				<div id="botones">
 				<center>
-				<input  type="submit" value="Enviar"> 
-				<input  type="submit" value="Cancelar" />
-				<input type="reset"value="Reestablecer"/>
+				<input  type="submit" value="Enviar" onclick="validarFormulario()"> 
+				<input  type="button" value="Cancelar" onclick="cancelar()"/>
+				<input type="reset" value="Reestablecer"/>
 				</center>
 				</div>
 			
