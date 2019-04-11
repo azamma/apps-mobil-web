@@ -54,7 +54,7 @@ if (fecha===0 || fecha===""){
 }
 
 function cancelar() {
-var r = confirm("elija una opcion!");
+var r = confirm("Seleccione ACEPTAR para cancelar.");
 if (r == true) {
 document.getElementById("form").reset();
 } else {
