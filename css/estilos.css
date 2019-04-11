@@ -23,6 +23,24 @@ background: #e3e4e5;
 	text-align: center;
 	padding-left: 40%;
 	padding-top: 2%
+
+}
+
+#cajatotal {
+	
+	text-align: center;
+	padding-left: 30%;
+	padding-right: 10%;
+	
+}
+
+#cajatotal>p{
+	
+	 font-family: Arial;
+	font-size: 200%;
+	padding-right: 10%;
+	
+	
 }
 
 #logo {
