@@ -3,19 +3,12 @@ var local=0;
 function validarFormulario () {
 	
 	var validado=true;
-	var nombre=document.getElementById("nom").value;
-	var apellido=document.getElementById("ape").value;
-	var fecha=document.getElementById("check").value;
-	var sexo="";
-	var radio=document.forms.form.sexo;
+	var nombre=$("#nom").val();
+	var apellido=$("#ape").val();
+	var fecha=$("#check").val();
+	var radio=$("input[id='sexo']:checked").val();
 
-	for (let i = 0; i < radio.length; i++ ) {
-		if (radio[i].checked) {
-			sexo=radio[i].value;
-		}
-	}
-
-	if (sexo==="") {
+	if (!radio) {
 		alert("Elija un sexo");
 	 	validado=false;
 	 }
@@ -62,7 +55,7 @@ if (fecha===0 || fecha===""){
 function cancelar() {
 var r = confirm("Seleccione ACEPTAR para cancelar.");
 if (r == true) {
-document.getElementById("form").reset();
+$("#form").reset();
 } else {
 	return false;
 }
