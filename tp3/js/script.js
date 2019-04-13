@@ -63,10 +63,18 @@ $("#form").reset();
 
 function opacity(id) {
 	
-	// var opacidad = $("#img1").width();
-	
+	// Esto hace que "rebote" el total
+	$("#total").animate({letterSpacing: "+=10px"});
+	$("#total").animate({letterSpacing: "-=10px"});
 	if ($("#"+id).css('opacity') ==="0.5") {
+		
+		
 		$("#"+id).css('opacity','1');
+		$("#"+id).animate({ //Anima la escala de la imagen
+				width:"70%",
+				height:"20%"
+				});
+				
 			if (id==="img1" || id==="img4" || id==="img7" ||id==="img10") {
 				local=local- 200;
 				$('#total').text(local)
@@ -78,11 +86,17 @@ function opacity(id) {
 			if (id==="img3" || id==="img6" || id==="img9" ||id==="img12") {
 				local=local- 400;
 				$('#total').text(local)
-			}
+			}		
+		
 	}
 	else{
 		
 	$("#"+id).css('opacity','0.5');
+	
+	$("#"+id).animate({ //Anima la escala de la imagen
+				width:"80%",
+				height:"25%"
+				});
 
 	if (id==="img1" || id==="img4" || id==="img7" ||id==="img10") {
 				local=local + 200;
@@ -95,6 +109,7 @@ function opacity(id) {
 			if (id==="img3" || id==="img6" || id==="img9" ||id==="img12") {
 				local=local + 400;
 				$('#total').text(local)
-			}
+			}	
+
 }
 }
