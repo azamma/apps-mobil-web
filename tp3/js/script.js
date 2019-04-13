@@ -63,34 +63,38 @@ $("#form").reset();
 
 function opacity(id) {
 	
-	if (document.getElementById(id).style.opacity==="0.5") {
-		document.getElementById(id).setAttribute("style","opacity:1; -moz-opacity:1; filter:alpha(opacity=0)");
+	// var opacidad = $("#img1").width();
+	
+	if ($("#"+id).css('opacity') ==="0.5") {
+		$("#"+id).css('opacity','1');
 			if (id==="img1" || id==="img4" || id==="img7" ||id==="img10") {
 				local=local- 200;
-				document.getElementById("total").innerHTML = local;
+				$('#total').text(local)
 			}
 			if (id==="img2" || id==="img5" || id==="img8" ||id==="img11") {
 				local=local- 300;
-				document.getElementById("total").innerHTML = local;
+				$('#total').text(local)
 			}
 			if (id==="img3" || id==="img6" || id==="img9" ||id==="img12") {
 				local=local- 400;
-				document.getElementById("total").innerHTML = local;
+				$('#total').text(local)
 			}
 	}
 	else{
-	document.getElementById(id).setAttribute("style","opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50)");
+		
+	$("#"+id).css('opacity','0.5');
+
 	if (id==="img1" || id==="img4" || id==="img7" ||id==="img10") {
 				local=local + 200;
-				document.getElementById("total").innerHTML = local;
+				$('#total').text(local)
 			}
 			if (id==="img2" || id==="img5" || id==="img8" ||id==="img11") {
 				local=local+ 300;
-				document.getElementById("total").innerHTML = local;
+				$('#total').text(local)
 			}
 			if (id==="img3" || id==="img6" || id==="img9" ||id==="img12") {
 				local=local + 400;
-				document.getElementById("total").innerHTML = local;
+				$('#total').text(local)
 			}
 }
 }
