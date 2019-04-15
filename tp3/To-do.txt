@@ -3,10 +3,10 @@
 	a - Hecho
 	b - Hecho
 2 - Hecho	
-3
-	a
-	b
-	c
+3 - Hecho
+	a - Hecho
+	b - Hecho
+	c - Hecho
 4
 	a
 		i
@@ -24,4 +24,4 @@
 	a - Hecho
 	b - Hecho
 	c - Hecho
-6
+6 - Hecho
