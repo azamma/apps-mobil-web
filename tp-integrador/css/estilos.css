@@ -12,7 +12,52 @@ border: 2px solid black;
 }
 
 header {
+<<<<<<< HEAD
     background: #fff159;
+=======
+background: #ffff26;
+
+}
+
+#filtroPrecio {
+
+}
+
+#resultados1>div {
+	background: #ffff99;
+	border-style: 2px solid;
+}
+
+#resultados2>div {
+	background: #ffff99;
+	border-style: 2px solid;
+}
+
+#resultados3>div {
+	background: #ffff99;
+	border-style: 2px solid;
+}
+
+.row>div {
+    display: inline-flex;
+margin: 10px;    
+}
+
+#precio, #nombre {
+   font-weight: bold;   
+}
+
+#titulo {
+    text-align: center;
+    padding-left: 40%;
+}
+
+#logo {
+    height: 80%;
+    width: 30%;
+    display:inline-flex;
+    margin:2%;
+>>>>>>> 2e7375cb2517afe01a075c2acc95053b10e7c43e
 }
 
 .searchbar{
