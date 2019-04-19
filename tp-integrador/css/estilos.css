@@ -17,6 +17,34 @@ background: #ffff26;
 
 }
 
+#filtroPrecio {
+
+}
+
+#resultados1>div {
+	background: #ffff99;
+	border-style: 2px solid;
+}
+
+#resultados2>div {
+	background: #ffff99;
+	border-style: 2px solid;
+}
+
+#resultados3>div {
+	background: #ffff99;
+	border-style: 2px solid;
+}
+
+.row>div {
+    display: inline-flex;
+margin: 10px;    
+}
+
+#precio, #nombre {
+   font-weight: bold;   
+}
+
 #titulo {
     text-align: center;
     padding-left: 40%;
