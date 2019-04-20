@@ -15,7 +15,7 @@ $(function() {
 	//El tipo de petición
 	type: 'GET',
 	//La url de la api. Al final de la dirección se le pasa el término de la búsqueda
-	url: 'https://api.mercadolibre.com/sites/MLA/search?q='+param+'&category=MLA1648&shipping=free&sort=price_desc&offset='+limite,
+	url: 'https://api.mercadolibre.com/sites/MLA/search?q='+param+'&category=MLA10008&shipping=free&sort=price_desc&offset='+limite,
 	
 	//Si la api da una respuesta de éxito agarra la información que da y la llamo resultados
 	success: function(resultados){
