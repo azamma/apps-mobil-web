@@ -9,13 +9,15 @@ $(function() {
 	$( "#produ"+i ).empty();
 	}
 	
-	var limite=10;
+	var filtrosExtra=$( "#filtroEnvio option:selected" ).val()+$( "#filtroPrecio option:selected" ).val();
+	
+	var limite=parseFloat($( "#filtroCantidad option:selected" ).val())+1;
 		
 	$.ajax({
 	//El tipo de petición
 	type: 'GET',
 	//La url de la api. Al final de la dirección se le pasa el término de la búsqueda
-	url: 'https://api.mercadolibre.com/sites/MLA/search?q=memoria ram'+param+'&category=MLA10008&shipping=free&sort=price_desc&offset='+limite,
+	url: 'https://api.mercadolibre.com/sites/MLA/search?q=memoria ram'+param+'&category=MLA10008'+filtrosExtra+'&limit='+limite,
 	
 	//Si la api da una respuesta de éxito agarra la información que da y la llamo resultados
 	success: function(resultados){
@@ -23,7 +25,7 @@ $(function() {
 		//para cada resultado de los elementos results
 		$.each(resultados.results, function(i,resultado){	
 		
-			if(i<limite+1){
+			if(i<limite){
 				
 			$("#produ"+i).append('<p> Nombre: </p><p id="nombre'+i+'">' + resultado.title +' </p>');
 			$("#produ"+i).append('<p> Precio: </p>$<p id="precio'+i+'">' + resultado.price +' </p>');
@@ -48,8 +50,12 @@ $(function() {
 });
 
 function share(id){
+	
 	var produnumero = id.substr(id.length-1) ;
-	alert( 'Se va a compartir'+$('#nombre'+produnumero).text() );
+	
+	alert( 'Se va a compartir: '+$('#nombre'+produnumero).text() );
+	alert( 'Filtro: '+filtro_cantidad+filtro_envio+filtro_precio );
+
 
 }
 
