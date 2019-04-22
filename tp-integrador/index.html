@@ -11,94 +11,59 @@
 </head>
 <body class="bg-secondary">
 	<header>
-	
+
 		<div class="container-fluid">
-		
-		<div class="main row">
-		
-		<div class="col-2 md-1 ml-2 mt-1" >
-		<img id="logo" src="img/logo.png">
-		</div>
 
-		
-		<div class="col-9 ml-5">
-		
-			<div class="d-flex justify-content-center h-100">
-				<div class="searchbar">
-					<input class="search_input" id="campo" type="text" name="" placeholder="¿Qué estabas buscando?">
-					<a href="#" class="search_icon" id="buscador"><i class="fas fa-search"></i></a>
+			<div class="main row">
+
+				<div class="col-2 md-1 ml-2 mt-1" >
+					<img id="logo" src="img/logo.png">
 				</div>
-			</div>	
-			
-		</div>
-		
-		
-		<div class="col-2 mt-2">
-							
-			<select id="filtroPrecio" name="precio">
-				<option value="&sort=price_desc">Precio de mayor a menor</option> 
-				<option value="&sort=price_asc">Precio de menor a mayor</option> 
-			</select>
-			
-			<select id="filtroEnvio" name="envio">
-				<option value="&shipping=free">Envio Gratis</option> 
-				<option value="">Envio No gratis</option> 
-			</select>
-			
-			<select id="filtroCantidad" name="envio">
-				<option value="5">Mostrar 5 productos</option> 
-				<option value="10">Mostrar 10 productos</option> 
-			</select>
-		
-		</div>
 
-		
-		</div>
-		
+
+				<div class="col-9 ml-5">
+
+					<div class="d-flex justify-content-center h-100">
+						<div class="searchbar">
+							<input class="search_input" id="campo" type="text" name="" placeholder="¿Qué estabas buscando?">
+							<a href="#" class="search_icon" id="buscador"><i class="fas fa-search"></i></a>
+						</div>
+					</div>	
+
+				</div>
+
+
+				<div id="filtros" class="col-2 mt-2">
+
+					<select id="filtroPrecio" name="precio">
+						<option value="&sort=price_desc">Mayor precio</option> 
+						<option value="&sort=price_asc">Menor precio</option> 
+					</select>
+
+					<select id="filtroEnvio" name="envio">
+						<option value="&shipping=free">Envio Gratis</option> 
+						<option value="">Envio Pago</option> 
+					</select>
+
+					<select id="filtroCantidad" name="envio">
+						<option value="5">Mostrar 5</option> 
+						<option value="10">Mostrar 10</option> 
+					</select>
+
+				</div>
+
+
+			</div>
+
 		</div>
 		
 	</header>
 	
 
-	<div class="container-fluid">
-	
-	<section id="listado" class="main row">
-	
-		
-		<div id="resultados1" class="main row">
-	
-			<div class="col-md-4" id="produ1"></div>
+	<div id="contenedor" class="container-fluid mt-2 bg-secondary">
+
 			
-			<div class="col-md-4" id="produ2"></div>
-			
-			<div class="col-md-4" id="produ3"></div>	
-			
-		</div>
-		
-		<div id="resultados2" class="main row">
-		
-			<div class="col-md-4" id="produ4"></div>
-			
-			<div class="col-md-4" id="produ5"></div>
-			
-			<div class="col-md-4" id="produ6"></div>
-			
-		</div>				
-		
-		<div id="resultados3" class="main row">
-		
-			<div class="col-md-4" id="produ7"></div>
-			
-			<div class="col-md-4" id="produ8"></div>
-			
-			<div class="col-md-4" id="produ9"></div>	
-			
-		</div>				
-		
-	</section>	
 	</div>
 
-
-
-	</body>
-	</html>
+</body>
+</html>

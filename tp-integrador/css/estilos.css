@@ -15,8 +15,17 @@ border: 2px solid black;
 header {
 background: #ffff26;
 }
+#filtros {
+    display: inline-flex;
+}
+#filtros>select {
+  margin-left:5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 
-/* Style the navigation menu */
+}
+
+ Style the navigation menu */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -83,24 +92,20 @@ background: #ffff26;
  }
 
 #resultados1>div {
-	background: white;
+	background: #e3e4e5;
 	border-style: 2px solid;
 }
 
 #resultados2>div {
-	background: white;
+	background: #e3e4e5;
 	border-style: 2px solid;
 }
 
 #resultados3>div {
-	background: white;
+	background: #e3e4e5;
 	border-style: 2px solid;
 }
 
-.row>div {
-    display: inline-flex;
-margin: 10px;    
-}
 
 #precio, #nombre {
    font-weight: bold;   
@@ -112,11 +117,30 @@ margin: 10px;
 }
 
 #logo {
-    height: 80%;
-    width: 30%;
+    height: 100%;
+    width: 80%;
     display:inline-flex;
     margin:2%;
 }
+
+p {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.imgproducto {
+  height: 100%;
+  width: 50%;
+}
+
+.compartir {
+  height: 100%;
+  width: 60%;
+  display: inline-flex;
+
+}
+
+
 
 #barra {
     width: 100%;

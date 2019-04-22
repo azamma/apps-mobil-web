@@ -26,11 +26,14 @@ $(function() {
 		$.each(resultados.results, function(i,resultado){	
 		
 			if(i<limite){
-				
-			$("#produ"+i).append('<p> Nombre: </p><p id="nombre'+i+'">' + resultado.title +' </p>');
-			$("#produ"+i).append('<p> Precio: </p>$<p id="precio'+i+'">' + resultado.price +' </p>');
-			$("#produ"+i).append('<img src=' + resultado.thumbnail +'>');
-			$("#produ"+i).append('<div class="button"><input id="share'+i+'" type="button" onclick="share(this.id);" value="Compartir"/></div>');
+			$("#contenedor").append('<div id="produ'+i+ '" class="row bg-white mt-2"> </div>');
+			$("#produ"+i).append('<div id="descripcion'+i+ '"class="col-7 mt-3 mb-3 border border-warning"> </div>');		
+			$("#descripcion"+i).append('<p id="nombre'+i+'"> <b>Nombre: </b>' + resultado.title +' </p> ');
+			$("#descripcion"+i).append('<p id="precio'+i+'"> <b>Precio: </b> $' + resultado.price +' </p>');
+			$("#produ"+i).append('<div id= "img'+i+ '" class="col-3 mt-4 "> </div>');
+			$("#img"+i).append('<img class="imgproducto" src=' + resultado.thumbnail +'>');
+			$("#produ"+i).append('<div id="cmp'+i+ '" class="col-2  mt-3 mb-3"> </div>');
+			$("#cmp"+i).append('<img id="compartir' +i+ '" class="compartir" src="./img/compartir.png" onclick="share(this.id);">');
 			
 			
 			} 
@@ -49,7 +52,7 @@ $(function() {
 	
 });
 
-function share(id){
+function share(id){  c
 	
 	var produnumero = id.substr(id.length-1) ;
 	
