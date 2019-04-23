@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" charset="utf-8" content="user-scalable=no, width=device-width, initial-scale=1">
+	<title>Compatir tp4</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/api.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body class="bg-secondary">
+	<header>
+
+		<div class="container-fluid">
+
+			<div class="main row">
+
+				<div class="col-2 md-1 ml-2 mt-1" >
+					<img id="logo" src="img/logo.png">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<form id="form" class="container-fluid">
+   			   <div class="row"></div>
+					<input class="col-12" id="art" type="text" name="articulo" value="" disabled/>				
+				</div>
+					
+				<div class="row"></div>
+					<input class="col-12" id="precio" type="text" name="precio" value="" disabled/>
+				</div>
+
+				<div class="row"></div>
+					<input class="col-12" id="nombre" type="text" name="articulo" value="NOMBRE" required/>
+				</div>
+
+				<label id=princ> APELLIDO:</label>
+					<input id="ape" type="text" name="apellido" maxlength="25" />
+					</br>
+				
+				<label id=princ>NACIMIENTO:</label>
+					<input id="check" type="date" name="fecha" />
+					</br> </br>
+					
+				<label id=princ>SEXO:</label>
+					<label><input type="radio" id="sexo" value="Masculino">Masculino</label>
+					<input type="radio" id="sexo" value="Femenino" />Femenino
+					</br> </br>
+
+				<label id="cal">¿Cómo calificarias a esta página?</label>
+					<input id="check" type="radio" name="val" value="lamentable" />Lamentable
+					<input id="check" type="radio" name="val" value="mala" />Mala
+					<input type="radio" name="val" value="pmejor" />Podría ser mejor
+				    <input id="check" type="radio" name="val" value="buena" />Buena
+				    <input id="check" type="radio" name="val" value="mencanto" />Me encantó
+				   </br></br></br>
+				<label id="cal" >Sus comentarios nos ayudan a seguir creciendo...</label>
+				</br></br>
+					<center><textarea rows="15" cols="50">Introduzca sus comentarios...</textarea></center>
+					</br> </br>
+				<div id="botones">
+				<center>
+				<input  type="submit" value="Enviar" onclick="return validarFormulario()"> 
+				<input  type="button" value="Cancelar" onclick="cancelar()"/>
+				<input type="reset" value="Reestablecer"/>
+				</center>
+				</div>
+			
+			</form>
+
+</body>
+</html>
+	

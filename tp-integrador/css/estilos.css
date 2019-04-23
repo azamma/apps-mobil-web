@@ -1,6 +1,6 @@
  html {
 height: 180%;
-width: 99%;
+width: 100%;
 }
 
 body {
@@ -129,15 +129,16 @@ p {
 }
 
 .imgproducto {
-  height: 100%;
-  width: 50%;
+  width: 80px;
+  height: 80px;
 }
 
-.compartir {
-  height: 100%;
-  width: 60%;
-  display: inline-flex;
 
+.compartir {
+  display: inline-flex;
+ width: 30px;
+  height: 30px;
+}
 }
 
 
