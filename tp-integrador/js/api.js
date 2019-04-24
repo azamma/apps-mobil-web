@@ -72,6 +72,9 @@ function share(id){
 	var precio= $('#precio'+produnumero).text();
 	var nombre= $('#nombre'+produnumero).text();
 	
+	var queryString = "?precio=&" + precio + "&nombre=&" + nombre;
+	window.location.href = "compartir.html" + queryString;
+	
 
 
 }
