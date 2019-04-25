@@ -169,7 +169,7 @@ p {
     background: none;
     width: 0;
     caret-color:transparent;
-    line-height: 40px;
+    line-height: 20px;
     transition: width 0.4s linear;
     }
 
@@ -195,3 +195,7 @@ p {
     border-radius: 50%;
     color:white;
     }
+	input[type=search]{
+-webkit-appearance: textfield;
+}
+	

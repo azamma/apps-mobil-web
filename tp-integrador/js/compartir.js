@@ -23,8 +23,10 @@ $(function() {
     Subject : "Busqueda de Rams",
     Body : $('#art').val() + $('#precio').val()
 	}).then(
-		message => alert('Se envió la búsqueda')
+		message => alert('Se envió la búsqueda')		
 	);
+
+	history.back();
 		
 	//Esto evita que se recargue la página
     evt.preventDefault();
