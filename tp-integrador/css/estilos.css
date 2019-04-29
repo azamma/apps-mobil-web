@@ -117,8 +117,8 @@ background: #ffff26;
 }
 
 #logo {
-    height: 100%;
-    width: 80%;
+    height: 80px;
+    width: 190px;
     display:inline-flex;
     margin:2%;
 }

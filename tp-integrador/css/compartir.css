@@ -1,0 +1,24 @@
+html {
+height: 100%;
+width: 100%;
+}
+
+body {
+height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+background-color: #e3e4e5;
+border: 2px solid black;
+}
+
+header {
+background: #ffff26;
+}
+
+#logo {
+    height: 80px;
+    width: 190px;
+    display:inline-flex;
+    margin:2%;
+}
